@@ -88,7 +88,7 @@ nav{
 
 .cta-select{
    
-    background-color: #d41b1b;
+    background-color: #009AA6;
     width: 150px;
     height: 50px;
     cursor: pointer;
@@ -99,9 +99,9 @@ nav{
 }
 
 .cta-help{
-    border: 2px solid #d41b1b;
+    border: 2px solid #009AA6;
     background:transparent;
-    color: #d41b1b;
+    color: #009AA6;
     width: 150px;
     height: 50px;
     cursor: pointer;

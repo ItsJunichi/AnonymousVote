@@ -1,0 +1,179 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+button {
+    font-family: 'Poppins', sans-serif;
+}
+
+header{
+    display:flex;
+    width: 90%;
+    height: 10vh;
+    margin: auto;
+    align-items: center;
+}
+
+.logo-container,
+.nav-links, 
+.question {
+    display: flex;
+}
+
+.logo-container{
+    flex: 1;
+    
+}
+
+.logo{
+    font-weight: 400;
+    margin: 4px;
+}
+
+nav{
+    flex: 3;
+}
+
+.nav-links{
+    justify-content: space-around;
+    list-style: none;
+}
+
+.nav-link{
+    color: #5f5f79;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+.question{
+    flex: 1;
+    justify-content: flex-end;
+}
+
+.presentation{
+    display: flex;
+    width: 90%;
+    margin:auto;
+    min-height: 80vh;
+    align-items: center;
+}
+
+.introduction{
+    flex: 1;
+}
+
+.intro-text h1 {
+    font-size: 44px;
+    font-weight: 500;
+    background: linear-gradient(to right, #494964, #6f6f89);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.intro-text p{
+    margin-top: 5px;
+    font-size: 22px;
+    color: #585772;
+}
+
+.cta{
+    padding: 30px 0px 0px 0px;
+}
+
+.cta-select{
+   
+    background-color: #d41b1b;
+    width: 150px;
+    height: 50px;
+    cursor: pointer;
+    font-size: 16px;
+    border: none;
+    color: white;
+    margin: 30px 0px 0px 0px;
+}
+
+.cta-help{
+    border: 2px solid #d41b1b;
+    background:transparent;
+    color: #d41b1b;
+    width: 150px;
+    height: 50px;
+    cursor: pointer;
+    font-size: 16px;
+    margin: 30px 0px 0px 30px;
+}
+
+
+
+.cover{
+    flex:1;
+}
+
+.cover img{
+    height: 40vh;
+    filter: drop-shadow(0px 5px 3px black);
+    animation: drop 1.5s ease;
+}
+
+.big-circle{
+    position: absolute;
+    top:0px;
+    right:0px;
+    z-index: -1;
+    opacity: 0.5;
+    height: 80%;
+}
+
+.medium-circle{
+    position: absolute;
+    top:30%;
+    right:30%;
+    z-index: -1;
+    height: 60%;
+    opacity: 0.4;
+}
+
+.small-circle{
+    position: absolute;
+    bottom: 0%;
+    left: 20%;
+    z-index: -1;
+}
+
+@keyframes drop{
+    0%{
+        opacity: 0;
+        transform: translateY(-80px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+.two-column-wrapper {
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+
+}
+
+.profile-image-wrapper img {
+    width: 60%;
+    align-items:flex-start;
+}
+
+.profile-content-wrapper {
+    padding: 30px;
+}
+
+.profile-content-wrapper h1 {
+    color:lightseagreen;
+}
+
+

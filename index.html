@@ -21,7 +21,10 @@
             </ul>
         </nav>
         <div class="question">
-            <img src="./img/questionmark.png" height="50" width="50"/>
+            <label>
+                <input type="checkbox" class ="checkbox" id="checkbox">
+                <span class="check"></span>
+            </label>
         </div>
     </header>
 
@@ -48,6 +51,15 @@
         <img class="medium-circle" src="./img/mid.svg">
         <img class="small-circle" src="./img/small.svg">
     </main>
+
+<script>
+
+    const checkbox = document.getElementById('checkbox');
+    checkbox.addEventListener('change', ()
+    => {
+        document.body.classList.toggle('dark')
+    })
+</script>
 
 </body>
 </html>

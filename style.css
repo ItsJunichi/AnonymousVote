@@ -195,6 +195,11 @@ nav{
     padding: 0px 0px 10px 0px;
 }
 
+.profile-content-wrapper p {
+    color:#585772;
+    padding: 0px 0px 10px 0px;
+}
+
 
 
 @media screen and (max-device-width : 1080px)
@@ -261,6 +266,7 @@ input[type="checkbox"]:checked ~.check
 input[type="checkbox"]:checked ~.check::before
 {
     transform: translateX(-50px);
+    
 }
 
 .check::after
@@ -275,7 +281,7 @@ input[type="checkbox"]:checked ~.check::before
     border-radius: 50%;
     transition: 0.5s;
     transform: translateX(50px);
-    
+
     
 
 }
@@ -285,10 +291,7 @@ input[type="checkbox"]:checked ~.check::after
     transform: translateX(0px);
 }
 
-.check.intro-text h1::after
-{
-    background: red;
-}
+/*INSERT TEST THINGS BELOW HERE */
 
 
 

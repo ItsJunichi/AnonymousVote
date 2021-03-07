@@ -303,13 +303,21 @@ input[type="checkbox"]:checked ~.check::after
     transform: translateX(0px);
 }
 
-@media (max-width:600px) {
+@media only screen and  (max-width:600px) {
     .nav-links{
         display: none;
-
+    
     
     }
 }
+@media only screen and  (max-width:830px) {
+    .cover{
+        display: none;
+    
+    
+    }
+}
+
 
 
 

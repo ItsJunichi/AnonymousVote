@@ -303,16 +303,6 @@ input[type="checkbox"]:checked ~.check::after
     transform: translateX(0px);
 }
 
-.burger-menu{
-    display: none;
-    justify-content: flex-end;
-    width: 100%;
-}
-.burger-menu img{
-   padding: 0px;
-   margin-top: 10px;
-   display: none;
-}
 
 
 
@@ -358,4 +348,15 @@ input[type="checkbox"]:checked ~.check::after
         justify-content: center;
         margin-left: 0px;
     }
+}
+
+.burger-menu{
+    display: none;
+    justify-content: flex-end;
+    width: 100%;
+}
+.burger-menu img{
+   padding: 0px;
+   margin-top: 10px;
+   display: none;
 }

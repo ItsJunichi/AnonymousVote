@@ -303,17 +303,59 @@ input[type="checkbox"]:checked ~.check::after
     transform: translateX(0px);
 }
 
-@media only screen and  (max-width:600px) {
-    .nav-links{
-        display: none;
-    
-    
-    }
+.burger-menu{
+    display: none;
+    justify-content: flex-end;
+    width: 100%;
 }
-@media only screen and  (max-width:830px) {
+.burger-menu img{
+   padding: 0px;
+   margin-top: 10px;
+
+}
+
+
+
+@media only screen and  (max-width:768px) {
     .cover{
         display: none;
     
     
+    }
+    .intro-text h1, p{
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .intro-text p{
+        padding-top: 20px;
+    }
+    .nav-link{
+        display: none;
+    }
+    .burger-menu{
+        display: flex;
+    }
+    .check{
+        display: none;
+    }
+    .logo-container{
+        display: none;
+    }
+    .cta{
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        flex-direction: row;
+    }
+    .cta-help{
+        align-items: center;
+        justify-content: center;
+        margin-left: 0px;
+    }
+    .cta-select{
+        align-items: center;
+        justify-content: center;
+        margin-left: 0px;
     }
 }

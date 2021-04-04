@@ -1,38 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.23/css/jquery.dataTables.css">
-    <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.23/js/jquery.dataTables.js"></script>
-    <script type = "text/javascript">  
-        $(document).ready( function () {
-            $('#112').DataTable();
-    } );
-        </script>  
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" a href="style.css">
     <title>Document</title>
 </head>
+
 <body>
-    <p>Click the following button to see the function in action</p>  
-    <input type = "button" onclick = "myfunction()" value = "Display">
-    
-    <table id="112" class="display">
-        <thead>
-            <tr>
-                <th>Column 1</th>
-                <th>Column 2</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>Row 1 Data 1</td>
-                <td>Row 1 Data 2</td>
-            </tr>
-            <tr>
-                <td>Row 2 Data 1</td>
-                <td>Row 2 Data 2</td>
-            </tr>
-        </tbody>
-    </table>
+    <p contenteditable="true" id="area">Create Survey </p>
+
+    <form id="form" method="POST" action="save_data.php">
+        <input type="text" name="text_field[]">
+        <button type="submit">Lähetä</button>
+    </form>
+    <button onclick="add_field()">Lisää valinta</button>
+    <script>
+        function add_field() {
+
+            var x = document.getElementById("form");
+            // create an input field to insert
+            var new_field = document.createElement("input");
+            // set input field data type to text
+            new_field.setAttribute("type", "text");
+            // set input field name 
+            new_field.setAttribute("name", "text_field[]");
+            // select last position to insert element before it
+            var pos = x.childElementCount;
+
+            // insert element
+            x.insertBefore(new_field, x.childNodes[pos]);
+        }
+    </script>
 </body>
+
 </html>

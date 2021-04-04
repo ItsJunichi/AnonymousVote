@@ -281,11 +281,40 @@ input[type="checkbox"]:checked ~ .check::after {
   .cover {
     display: none;
   }
-  .burger div {
-    width: 25px;
-    height: 3px;
+  .line1, .line2, .line3 {
     background-color: black;
-    margin: 4px;
+    width: 33px;
+    height: 4px;
+    margin-bottom: 5px;
+  }
+  .line {
+    transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease;
+  }
+  .new-class1 {
+    background-color: black;
+    opacity: 1;
+    transform: rotate(45deg) translate(-2px, -1px);
+    width: 33px;
+    height: 4px;
+    margin-bottom: 5px;
+    transform-origin: 4px 0px;
+  }
+  .new-class2 {
+    background-color: black;
+    opacity: 0;
+    transform: rotate(0deg) scale(0.2, 0.2);
+    width: 33px;
+    height: 4px;
+    margin-bottom: 5px;
+    transform-origin: 0% 0%;
+  }
+  .new-class3 {
+    background-color: black;
+    transform: rotate(-45deg) translate(0, -1px);
+    width: 33px;
+    height: 4px;
+    margin-bottom: 5px;
+    transform-origin: 0% 100%;
   }
   .intro-text h1, p {
     justify-content: center;

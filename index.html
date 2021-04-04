@@ -12,6 +12,7 @@
 </head>
 
 <body>
+
     <header>
         <div class="logo-container">
             <img src="./img/kamk-logo2.jpg" width="50" height="50">
@@ -24,10 +25,11 @@
                 <li><a class="nav-link" href="contact.html">Ota Yhteyttä</a> </li>
             </ul>
             <div class="burger">
-                <div class="line1"></div>
-                <div class="line2"></div>
-                <div class="line3"></div>
+                <div class="line1 line" id="line1"></div>
+                <div class="line2 line" id="line2"></div>
+                <div class="line3 line" id="line3"></div>
             </div>
+
         </nav>
         <div class="question">
             <label>
@@ -47,7 +49,7 @@
                     </p>
                 </div>
                 <div class="cta">
-                    <button class="cta-select">Luo kysely</button>
+                    <button onclick="window.location.href='survey.html'" class="cta-select">Luo kysely</button>
                     <button class="cta-help">Kysyttävää?</button>
                 </div>
             </div>
@@ -64,7 +66,6 @@
     </main>
 
     <script src="darkmode.js"></script>
-
 
 
     <script src="app.js"></script>

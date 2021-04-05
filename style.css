@@ -316,6 +316,15 @@ input[type="checkbox"]:checked ~ .check::after {
     margin-bottom: 5px;
     transform-origin: 0% 100%;
   }
+  .line1 {
+    transform-origin: 4px 0px;
+  }
+  .line2 {
+    transform-origin: 0% 0%;
+  }
+  .line3 {
+    transform-origin: 0% 100%;
+  }
   .intro-text h1, p {
     justify-content: center;
     align-items: center;

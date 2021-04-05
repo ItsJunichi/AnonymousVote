@@ -331,9 +331,6 @@ input[type="checkbox"]:checked ~.check::after
               opacity 0.55s ease;
     }
 
-    .burger{
-
-    }
    
 
     .new-class1{
@@ -362,6 +359,16 @@ input[type="checkbox"]:checked ~.check::after
         height: 4px;
          margin-bottom: 5px;
          transform-origin: 0% 100%;
+    }
+
+    .line1{
+        transform-origin: 4px 0px;
+    }
+    .line2{
+        transform-origin: 0% 0%;
+    }
+    .line3{
+        transform-origin: 0% 100%;
     }
 
     .intro-text h1, p{

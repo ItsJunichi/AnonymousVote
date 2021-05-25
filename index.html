@@ -1,75 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <META HTTP-EQUIV="CACHE-CONTROL" CONTENT="NO-CACHE">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap" rel="stylesheet">
+  <head>
+    <meta http-equiv="CACHE-CONTROL" content="NO-CACHE" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./style.css?v=1" />
     <title>Aloitussivu</title>
-</head>
+  </head>
 
-<body>
-
+  <body>
     <header>
-        <div class="logo-container">
-            <img src="./img/kamk-logo2.jpg" width="50" height="50">
-        </div>
+      <div class="logo-container">
+        <img src="./img/kamk-logo2.jpg" width="50" height="50" />
+      </div>
 
-        <nav>
-            <ul class="nav-links">
-                <li><a class="nav-link" href="index.html">Koti</a> </li>
-                <li><a class="nav-link" href="about.html">Lisätietoja</a> </li>
-                <li><a class="nav-link" href="contact.html">Ota Yhteyttä</a> </li>
-            </ul>
-            <div class="burger">
-                <div class="line1 line" id="line1"></div>
-                <div class="line2 line" id="line2"></div>
-                <div class="line3 line" id="line3"></div>
-            </div>
-
-        </nav>
-        <div class="question">
-            <label>
-                <input type="checkbox" class="checkbox" id="checkbox">
-                <span class="check"></span>
-            </label>
+      <nav>
+        <ul class="nav-links">
+          <li><a class="nav-link" href="index.html">Koti</a></li>
+          <li><a class="nav-link" href="about.html">Lisätietoja</a></li>
+          <li><a class="nav-link" href="contact.html">Ota Yhteyttä</a></li>
+        </ul>
+        <div class="burger">
+          <div class="line1 line" id="line1"></div>
+          <div class="line2 line" id="line2"></div>
+          <div class="line3 line" id="line3"></div>
         </div>
+      </nav>
+      <div class="question">
+        <label>
+          <input type="checkbox" class="checkbox" id="checkbox" />
+          <span class="check"></span>
+        </label>
+      </div>
     </header>
 
     <main>
-        <section class="presentation">
-            <div class="introduction">
-                <div class="intro-text" id="it">
-                    <h1>Anonyymi Äänestys</h1>
-                    <p>Helpoin tapa luoda kyselyitä ja äänestyksiä
+      <section class="presentation">
+        <div class="introduction">
+          <div class="intro-text" id="it">
+            <h1>Anonyymi Äänestys</h1>
+            <p>Helpoin tapa luoda kyselyitä ja äänestyksiä</p>
+          </div>
+          <div class="cta">
+            <button
+              onclick="window.location.href='survey.html'"
+              class="cta-select"
+            >
+              Luo kysely
+            </button>
+            <button class="cta-help">Kysyttävää?</button>
+          </div>
+        </div>
 
-                    </p>
-                </div>
-                <div class="cta">
-                    <button onclick="window.location.href='survey.html'" class="cta-select">Luo kysely</button>
-                    <button class="cta-help">Kysyttävää?</button>
-                </div>
-            </div>
+        <div class="cover">
+          <img src="./img/survey2.svg" />
+        </div>
+      </section>
 
-            <div class="cover">
-                <img src="./img/survey2.svg">
-            </div>
-
-        </section>
-
-        <img class="big-circle" src="./img/big.svg">
-        <img class="medium-circle" src="./img/mid.svg">
-        <img class="small-circle" src="./img/small.svg">
+      <img class="big-circle" src="./img/big.svg" />
+      <img class="medium-circle" src="./img/mid.svg" />
+      <img class="small-circle" src="./img/small.svg" />
     </main>
 
     <script src="darkmode.js"></script>
 
-
     <script src="app.js"></script>
-
-</body>
-
+  </body>
 </html>
